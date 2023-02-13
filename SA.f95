@@ -33,12 +33,12 @@ program simulatedAnnealing
   parameter (SIGMA=(/30,59,102,307,69/))
 
   integer MR(Nimax,Njmax), mag(Nimax,Njmax), z(Nimax,Njmax)           	!/* 2D Ising Lattice */
-  integer i, j, k, m, n, sweeps, accept, move      				!/* Loop counters */
-  integer Inn(NN)                    						!/* Nearest neighbor array I */
+  integer i, j, k, m, n, sweeps, accept, move      			!/* Loop counters */
+  integer Inn(NN)                    					!/* Nearest neighbor array I */
   parameter (Inn=(/1,-1,0,0/))
-  integer Jnn(NN)                       						!/* Nearest neighbor array J */
+  integer Jnn(NN)                       				!/* Nearest neighbor array J */
   parameter (Jnn=(/0,0,1,-1/)) 
-  integer Inew, Jnew               							!/* Nearest neighbot indices */ 
+  integer Inew, Jnew               					!/* Nearest neighbot indices */ 
   real*8 T, Tf, lambda, En
   integer seed, correct(0:5), gesamt(0:5)
   CALL SYSTEM_CLOCK(seed)
