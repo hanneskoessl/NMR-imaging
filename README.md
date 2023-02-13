@@ -1,4 +1,4 @@
 # NMR-imaging
-Simulated annealing practice example:
+Practice example for simulated annealing:
 
 NMR images of brains are segmented using simulated annealing.
